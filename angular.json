@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/eyeshadow",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,7 +27,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "assets/jeff.orgy.bundle.js"
+              "src/assets/jeff.orgy.bundle.js"
             ]
           },
           "configurations": {
@@ -132,6 +132,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "eyeshadow"
+    }
+  },
+  "defaultProject": "eyeshadow",
+  "cli": {
+    "analytics": "77be16c4-130d-4367-aab6-c9149be0f9db"
+  }
 }
