@@ -1,0 +1,22 @@
+<div *ngIf="error; else slugFound">
+Palette for '{{ slug }}' not found.
+</div>
+
+<ng-template #slugFound>
+<h1>{{ palette.name }}</h1>
+<h2>{{ palette.company }}</h2>
+
+<img src="{{ palette.colors[0].image }}">
+<h1>Original</h1>
+<div id="palette"></div>
+<h1>Sorted by Hue</h1>
+<div id="palette_sorted_hue"></div>
+<h1>Sorted by Saturation</h1>
+<div id="palette_sorted_saturation"></div>
+<h1>Sorted by Lightness</h1>
+<div id="palette_sorted_lightness"></div>
+<h1>Reduced</h1>
+<div id="slider"></div>
+<div id="palette_reduced"></div>
+
+</ng-template>

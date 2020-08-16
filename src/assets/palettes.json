@@ -1,0 +1,81 @@
+{
+    "jeffree-star-orgy": {
+        "company": "Jeffree Star Cosmetics",
+        "name": "Orgy",
+        "colors": [
+            {
+                "image": "https://preview.redd.it/oi2ysnqn11h51.jpg?width=960&crop=smart&auto=webp&s=0c8506090fd5dfe0a357846da464c767b99d5668",
+                "columns": 6,
+                "hex_codes": [
+                    "#feece2",
+                    "#fdf2de",
+                    "#fee5d1",
+                    "#f8e1cf",
+                    "#fddcc9",
+                    "#f6d8cd",
+                    "#fee6c2",
+                    "#ffd9c4",
+                    "#ffccad",
+                    "#fdc9a4",
+                    "#eec5a3",
+                    "#ecb9a6",
+                    "#e8bb9e",
+                    "#e4a187",
+                    "#edac86",
+                    "#db9f85",
+                    "#d79477",
+                    "#d08c5d",
+                    "#c97d4c",
+                    "#c28f70",
+                    "#ca9a8e",
+                    "#b1633c",
+                    "#af583f",
+                    "#ad7d73",
+                    "#a65c43",
+                    "#aa7a63",
+                    "#985939",
+                    "#77402c",
+                    "#7a4b38",
+                    "#463130"
+                ]
+            }
+        ]
+    },
+    "abh-norvina-vol-1": {
+        "company": "Anastasia Beverly Hills",
+        "name": "Norvina Vol 1",
+        "colors": [
+            {
+                "image": "https://images.ulta.com/is/image/Ulta/2554348?op_sharpen=1&resMode=bilin&qlt=85&wid=800&hei=800&fmt=jpg",
+                "columns": 5,
+                "hex_codes": [
+                    "#eab0d6",
+                    "#a0379c",
+                    "#7b2154",
+                    "#b98867",
+                    "#f21559",
+                    "#cb3e8a",
+                    "#945b50",
+                    "#cb4570",
+                    "#582b70",
+                    "#6f3567",
+                    "#d9d8de",
+                    "#c8975f",
+                    "#8d3e42",
+                    "#933953",
+                    "#7f3333",
+                    "#e0aa46",
+                    "#43408d",
+                    "#ce0b2b",
+                    "#082980",
+                    "#1f1a1e",
+                    "#e47867",
+                    "#e74f38",
+                    "#be813e",
+                    "#f62e38",
+                    "#6b2a2e"
+                ]
+            }
+        ]
+    }
+}
