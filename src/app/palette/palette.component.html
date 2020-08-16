@@ -1,30 +1,61 @@
-<div *ngIf="error; else slugFound">
-Palette for '{{ slug }}' not found.
-</div>
+<section *ngIf="error; else slugFound" class="section">
+  <div class="container">
+    <h1 class="title">404 Not Found</h1>
+    <h2 class="subtitle">Palette for '{{ slug }}' not found.</h2>
+  </div>
+</section>
 
 <ng-template #slugFound>
-<h1>{{ palette.name }}</h1>
-<h2>{{ palette.company }}</h2>
-<h1>{{ heyo }}</h1>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">{{ palette.name }}</h1>
+      <h2 class="subtitle">{{ palette.company }}</h2>
+    </div>
+  </section>
+
 <img src="{{ palette.colors[0].image }}">
 <h1>Original</h1>
 <div class="palette">
     <div *ngFor="let hex_code of sorted.original" class='shade shade-col{{ palette.colors[0].columns }}' [style.background-color]="hex_code"></div>
 </div>
 
-<h1>Sorted by Hue</h1>
-<div class="palette">
-    <div *ngFor="let hex_code of sorted.hue" class='shade shade-col{{ palette.colors[0].columns }}' [style.background-color]="hex_code"></div>
-</div>
-
-<h1>Sorted by Saturation</h1>
-<div class="palette">
-    <div *ngFor="let hex_code of sorted.saturation" class='shade shade-col{{ palette.colors[0].columns }}' [style.background-color]="hex_code"></div>
-</div>
-
-<h1>Sorted by Lightness</h1>
-<div class="palette">
-    <div *ngFor="let hex_code of sorted.lightness" class='shade shade-col{{ palette.colors[0].columns }}' [style.background-color]="hex_code"></div>
+<div class="columns">
+  <div class="column">
+    <div class="card">
+      <div class="card-content">
+        <p class="title is-4">Sorted by Hue</p>
+        <div class="content">
+          <div class="palette">
+            <div *ngFor="let hex_code of sorted.hue" class='shade shade-col{{ palette.colors[0].columns }}' [style.background-color]="hex_code"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="card-content">
+        <p class="title is-4">Sorted by Saturation</p>
+        <div class="content">
+          <div class="palette">
+            <div *ngFor="let hex_code of sorted.saturation" class='shade shade-col{{ palette.colors[0].columns }}' [style.background-color]="hex_code"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="card-content">
+        <p class="title is-4">Sorted by Lightness</p>
+        <div class="content">
+          <div class="palette">
+            <div *ngFor="let hex_code of sorted.lightness" class='shade shade-col{{ palette.colors[0].columns }}' [style.background-color]="hex_code"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <h1>Reduced</h1>
