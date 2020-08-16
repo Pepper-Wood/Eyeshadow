@@ -5,16 +5,28 @@ Palette for '{{ slug }}' not found.
 <ng-template #slugFound>
 <h1>{{ palette.name }}</h1>
 <h2>{{ palette.company }}</h2>
-
+<h1>{{ heyo }}</h1>
 <img src="{{ palette.colors[0].image }}">
 <h1>Original</h1>
-<div id="palette"></div>
+<div class="palette">
+    <div *ngFor="let hex_code of sorted.original" class='shade shade-col{{ palette.colors[0].columns }}' [style.background-color]="hex_code"></div>
+</div>
+
 <h1>Sorted by Hue</h1>
-<div id="palette_sorted_hue"></div>
+<div class="palette">
+    <div *ngFor="let hex_code of sorted.hue" class='shade shade-col{{ palette.colors[0].columns }}' [style.background-color]="hex_code"></div>
+</div>
+
 <h1>Sorted by Saturation</h1>
-<div id="palette_sorted_saturation"></div>
+<div class="palette">
+    <div *ngFor="let hex_code of sorted.saturation" class='shade shade-col{{ palette.colors[0].columns }}' [style.background-color]="hex_code"></div>
+</div>
+
 <h1>Sorted by Lightness</h1>
-<div id="palette_sorted_lightness"></div>
+<div class="palette">
+    <div *ngFor="let hex_code of sorted.lightness" class='shade shade-col{{ palette.colors[0].columns }}' [style.background-color]="hex_code"></div>
+</div>
+
 <h1>Reduced</h1>
 <div id="slider"></div>
 <div id="palette_reduced"></div>

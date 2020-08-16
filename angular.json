@@ -27,7 +27,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/jeff.orgy.bundle.js"
+              "src/assets/palette.bundle.js"
             ]
           },
           "configurations": {

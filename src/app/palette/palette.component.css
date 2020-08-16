@@ -1,0 +1,13 @@
+img {
+  width: 50%;
+}
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+}
+.shade {
+  height: 50px;
+}
+.shade-col4 { flex: 1 0 21%; }
+.shade-col5 { flex: 1 0 17%; }
+.shade-col6 { flex: 1 0 16%; }
