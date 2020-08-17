@@ -81,9 +81,26 @@
         </div>
       </div>
     </section>
+    <hr class="hr">
+    <section>
+      <h1 class="title">Reduced</h1>
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="palette">
+                <div *ngFor="let hex_code of reduced" class='shade shade-col{{ palette.columns }}' [style.background-color]="hex_code"></div>
+                <div *ngFor="let item of [].constructor(reduced_remainder_count)" class='shade shade-col{{ palette.columns }}'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-two-thirds">
+          <div id="slider"></div>
+          <div id="palette_reduced"></div>
+        </div>
+      </div>
+    </section>
 
-  <h1>Reduced</h1>
-  <div id="slider"></div>
-  <div id="palette_reduced"></div>
 </div>
 </ng-template>
