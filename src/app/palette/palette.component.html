@@ -23,8 +23,8 @@
       </nav>
     </div>
   </section>
-  <div class="container">
-    <section [style.marginTop.rem]="1.5">
+  <div class="container" [style.marginTop.rem]="2" [style.marginBottom.rem]="2">
+    <section>
       <h1 class="title">Overview</h1>
       <div class="columns">
         <div class="column">
@@ -96,8 +96,7 @@
           </div>
         </div>
         <div class="column is-two-thirds">
-          <div id="slider"></div>
-          <div id="palette_reduced"></div>
+          <input type="range" min="1" max="50" value="6" #ref (change)="update_reduced(ref.value)">
         </div>
       </div>
     </section>

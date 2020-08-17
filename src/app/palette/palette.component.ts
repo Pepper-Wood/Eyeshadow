@@ -36,10 +36,7 @@ export class PaletteComponent implements OnInit {
         this.sorted = this.get_sorted_hex_codes(color_objects);
 
         this.reduced = this.get_reduced_palette(color_objects, 6);
-        this.reduced_remainder_count = this.palette.columns - (this.reduced.length % this.palette.columns);
-        if (this.reduced_remainder_count == this.palette.columns) {
-          this.reduced_remainder_count = 0;
-        }
+        this.reduced_remainder_count = this.palette.colors[this.im].hex_codes.length - this.reduced.length;
       }
     });
   }
@@ -127,6 +124,12 @@ export class PaletteComponent implements OnInit {
       }, 0);
       color_objects.splice(maxIndex, 1);
     }
+  }
+
+  update_reduced(range_value) {
+    let color_objects = this.convert_hex_codes_to_colors(this.palette.colors[this.im].hex_codes);
+    this.reduced = this.get_reduced_palette(color_objects, range_value);
+    this.reduced_remainder_count = this.palette.colors[this.im].hex_codes.length - this.reduced.length;
   }
 
 }
