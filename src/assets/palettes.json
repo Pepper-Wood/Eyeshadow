@@ -2,10 +2,47 @@
     "jeffree-star-orgy": {
         "company": "Jeffree Star Cosmetics",
         "name": "Orgy",
+        "columns": 6,
         "colors": [
             {
-                "image": "https://preview.redd.it/oi2ysnqn11h51.jpg?width=960&crop=smart&auto=webp&s=0c8506090fd5dfe0a357846da464c767b99d5668",
-                "columns": 6,
+                "name": "Glamour Shot",
+                "image": "assets/images/jeffreestar/orgy/promo.jpeg",
+                "hex_codes": [
+                    "#F2DCCF",
+                    "#EAD1BB",
+                    "#DDAF95",
+                    "#CBA18A",
+                    "#C38E7C",
+                    "#BA8D76",
+                    "#F3CDAF",
+                    "#EBB8A4",
+                    "#E79D79",
+                    "#D7926F",
+                    "#AB7B5F",
+                    "#99685A",
+                    "#CC927A",
+                    "#B87762",
+                    "#C27A5D",
+                    "#9B6353",
+                    "#885544",
+                    "#7D4F38",
+                    "#9F6245",
+                    "#97644F",
+                    "#92665D",
+                    "#724434",
+                    "#68392F",
+                    "#674843",
+                    "#75493E",
+                    "#78564A",
+                    "#604035",
+                    "#422723",
+                    "#412C27",
+                    "#241E20"
+                ]
+            },
+            {
+                "name": "YouTube Promo Still",
+                "image": "assets/images/jeffreestar/orgy/youtubepromostill.jpg",
                 "hex_codes": [
                     "#feece2",
                     "#fdf2de",
@@ -44,10 +81,11 @@
     "abh-norvina-vol-1": {
         "company": "Anastasia Beverly Hills",
         "name": "Norvina Vol 1",
+        "columns": 5,
         "colors": [
             {
-                "image": "https://images.ulta.com/is/image/Ulta/2554348?op_sharpen=1&resMode=bilin&qlt=85&wid=800&hei=800&fmt=jpg",
-                "columns": 5,
+                "name": "Product Listing",
+                "image": "assets/images/abh/norvinavol1/productlisting.jpeg",
                 "hex_codes": [
                     "#eab0d6",
                     "#a0379c",

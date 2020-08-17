@@ -1,5 +1,6 @@
-img {
-  width: 50%;
+.hero {
+  background-size: cover;
+  background-position: center;
 }
 .palette {
   display: flex;

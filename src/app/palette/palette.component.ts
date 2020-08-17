@@ -11,6 +11,7 @@ import Color from 'color';
 })
 export class PaletteComponent implements OnInit {
   slug: string;
+  im: number;
   error: any;
 
   palettes: any = palettes;
@@ -24,12 +25,12 @@ export class PaletteComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.slug = params.get('slug');
+      this.im = +params.get('im') || 0;
       if (!this.palettes.hasOwnProperty(this.slug)) {
         this.error = "error: slug not found";
       } else {
         this.palette = this.palettes[this.slug];
-        this.sorted = this.get_sorted_hex_codes(this.palette.colors[0].hex_codes);
-        console.log(this.sorted);
+        this.sorted = this.get_sorted_hex_codes(this.palette.colors[this.im].hex_codes);
       }
     });
   }

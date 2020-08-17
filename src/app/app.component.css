@@ -1,0 +1,13 @@
+.logo {
+  font-family: BunchBlossoms;
+  color: #000 !important;
+  font-size: 24px;
+  padding: .5rem .75rem;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background: transparent;
+}
