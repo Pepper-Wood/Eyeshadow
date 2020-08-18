@@ -96,7 +96,7 @@
         <div class="column is-two-thirds">
           Threshold: {{ range_value }}
           <div class="range">
-            <input class="range__input" step="1" min="1" max="20" [value]="range_value" type="range" #ref (change)="update_reduced(ref.value)" list="number">
+            <input class="range__input" step="0.1" min="1" max="20" [value]="range_value" type="range" #ref (change)="update_reduced(ref.value)" list="number">
             <datalist class="range__list" id="number">
               <option *ngFor="let item of [].constructor(20); index as i" class="range__opt">{{ i + 1 }}</option>
             </datalist>

@@ -1,4 +1,46 @@
 {
+  "abh-norvina-vol-1": {
+    "company": "Anastasia Beverly Hills",
+    "name": "Norvina Vol 1",
+    "description": "TBD",
+    "colors": [
+      {
+        "name": "Product Listing",
+        "image": "assets/images/abh/norvinavol1/productlisting.jpeg",
+        "description": "TBD",
+        "columns": 5,
+        "hex_codes": ["#eab0d6","#a0379c","#7b2154","#b98867","#f21559","#cb3e8a","#945b50","#cb4570","#582b70","#6f3567","#d9d8de","#c8975f","#8d3e42","#933953","#7f3333","#e0aa46","#43408d","#ce0b2b","#082980","#1f1a1e","#e47867","#e74f38","#be813e","#f62e38","#6b2a2e"]
+      }
+    ]
+  },
+  "jeffree-star-conspiracy": {
+    "company": "Jeffree Star Cosmetics",
+    "name": "Conspiracy",
+    "description": "TBD",
+    "colors": [
+      {
+        "name": "Launch Promo",
+        "image": "assets/images/jeffreestar/conspiracy/productlisting.jpg",
+        "description": "",
+        "columns": 6,
+        "hex_codes": ["#EBEBEB","#E7D3CC","#D1AC80","#C08A5E","#CEADA1","#66534F","#D4D295","#E392A5","#E3ED10","#E47FC5","#EE9647","#E23A51","#ABCCC5","#C3C4CA","#873254","#A19182","#577460","#323136"]
+      }
+    ]
+  },
+  "jeffree-star-cremated": {
+    "company": "Jeffree Star Cosmetics",
+    "name": "Cremated",
+    "description": "This makeup palette was released on May 22nd, 2020. According to the product listing decription, \"The Cremated Palette is what smokey eye dreams are made of! Includes 24 sickening shades from pure white diamond to the darkest black matte to create endless intense sultry or soft, gentle looks on any skin tone\".",
+    "colors": [
+      {
+        "name": "Launch Promo",
+        "image": "assets/images/jeffreestar/cremated/launch.jpeg",
+        "description": "Image featured is from the palette's initial inside reveal, found at https://twitter.com/JeffreeStar/status/1261784515288035328?s=20.",
+        "columns": 6,
+        "hex_codes": ["#211D23","#1C1C28","#4D464D","#413B3C","#59595B","#65656E","#564C40","#6C6C75","#4C4850","#8C7875","#5D5862","#796965","#987865","#A9A9A9","#7E7277","#ACA6A5","#A1938A","#B4B1B4","#BAAA9D","#D3CBB4","#D9BBA7","#DDD7CC","#E7E4E7","#DBD4D1"]
+      }
+    ]
+  },
   "jeffree-star-orgy": {
     "company": "Jeffree Star Cosmetics",
     "name": "Orgy",
@@ -31,20 +73,6 @@
         "description": "Image featured is a screenshot from the palette's initial promotional YouTube video, found at https://www.youtube.com/watch?v=qDFjsMFojzs at timestamp 5:01. The colors extracted from this image are specifically for the top arm of the person with the darker skin tone.",
         "columns": 15,
         "hex_codes": ["#D28866","#C77E64","#D19B7E","#D49A87","#D2A682","#E1AB89","#E6AC8F","#EBB8A2","#F2D0B2","#DBB6AE","#E8C0B4","#E8CCB5","#ECD2BE","#EAD8C4","#E9D0C0"]
-      }
-    ]
-  },
-  "abh-norvina-vol-1": {
-    "company": "Anastasia Beverly Hills",
-    "name": "Norvina Vol 1",
-    "description": "TBD",
-    "colors": [
-      {
-        "name": "Product Listing",
-        "image": "assets/images/abh/norvinavol1/productlisting.jpeg",
-        "description": "TBD",
-        "columns": 5,
-        "hex_codes": ["#eab0d6","#a0379c","#7b2154","#b98867","#f21559","#cb3e8a","#945b50","#cb4570","#582b70","#6f3567","#d9d8de","#c8975f","#8d3e42","#933953","#7f3333","#e0aa46","#43408d","#ce0b2b","#082980","#1f1a1e","#e47867","#e74f38","#be813e","#f62e38","#6b2a2e"]
       }
     ]
   }
