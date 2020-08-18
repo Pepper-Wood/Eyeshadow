@@ -17,7 +17,7 @@ How to use assets/js files in angular: https://fmoralesdev.com/2019/10/23/using-
 Current Logo: https://www.flaticon.com/free-icon/eye_1554736?term=female%20eye&page=1&position=30
 
 
-# Eyeshadow
+# eyeshadow
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 

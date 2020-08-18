@@ -439,7 +439,7 @@ module.exports = content.locals || {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/kathryn.dipippo/repos/pepper-wood/Eyeshadow/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /Users/kathryn.dipippo/repos/pepper-wood/eyeshadow/src/styles.css */"./src/styles.css");
 
 
 /***/ })
