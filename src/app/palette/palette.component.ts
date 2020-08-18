@@ -3,7 +3,6 @@ import { ActivatedRoute } from '@angular/router';
 import palettes from '../../assets/palettes.json';
 import Color from 'color';
 import * as DeltaE from 'delta-e';
-import * as bulmaSlider from 'bulma-slider';
 
 @Component({
   selector: 'app-palette',
