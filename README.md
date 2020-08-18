@@ -11,6 +11,10 @@ Color names package: https://github.com/meodai/color-names
 3D color cube representation: https://codepen.io/meodai/pen/zdgXJj
 
 
+How to use assets/js files in angular: https://fmoralesdev.com/2019/10/23/using-external-js-files-in-angular/
+
+
+Current Logo: https://www.flaticon.com/free-icon/eye_1554736?term=female%20eye&page=1&position=30
 
 
 # Eyeshadow

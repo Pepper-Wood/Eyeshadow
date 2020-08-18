@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { PaletteComponent } from './palette/palette.component';
 
 const routes: Routes = [
-  { path: 'palette/:slug', component: PaletteComponent }
+  { path: 'palette/:slug', component: PaletteComponent },
+  { path: 'palette/:slug/:im', component: PaletteComponent }
 ];
 
 @NgModule({

@@ -24,11 +24,10 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bulma/css/bulma.min.css",
               "src/styles.css"
             ],
-            "scripts": [
-              "src/assets/jeff.orgy.bundle.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {

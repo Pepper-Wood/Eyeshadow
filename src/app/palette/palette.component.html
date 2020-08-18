@@ -1,22 +1,112 @@
-<div *ngIf="error; else slugFound">
-Palette for '{{ slug }}' not found.
-</div>
+<section *ngIf="error; else slugFound" class="section">
+  <div class="container">
+    <h1 class="title">404 Not Found</h1>
+    <h2 class="subtitle">Palette for '{{ slug }}' not found.</h2>
+  </div>
+</section>
 
 <ng-template #slugFound>
-<h1>{{ palette.name }}</h1>
-<h2>{{ palette.company }}</h2>
-
-<img src="{{ palette.colors[0].image }}">
-<h1>Original</h1>
-<div id="palette"></div>
-<h1>Sorted by Hue</h1>
-<div id="palette_sorted_hue"></div>
-<h1>Sorted by Saturation</h1>
-<div id="palette_sorted_saturation"></div>
-<h1>Sorted by Lightness</h1>
-<div id="palette_sorted_lightness"></div>
-<h1>Reduced</h1>
-<div id="slider"></div>
-<div id="palette_reduced"></div>
-
+  <section class="hero is-medium" [style.backgroundImage]="'url(' + palette.colors[im].image + ')'">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">{{ palette.name }}</h1>
+        <h2 class="subtitle">{{ palette.company }}</h2>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <nav class="tabs">
+        <div class="container">
+          <ul>
+            <li *ngFor="let color_option of palette.colors; index as i" [ngClass]="{'is-active' : im == i}"><a [routerLink]="['/palette/' + slug + '/' + i]">{{ color_option.name }}</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <div class="container" [style.marginTop.rem]="2" [style.marginBottom.rem]="2">
+    <section>
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="palette">
+                <div *ngFor="let hex_code of sorted.original" class='shade shade-col{{ palette.colors[im].columns }}' [style.background-color]="hex_code"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-two-thirds">
+          <p [innerHTML]="parseBody(palette.description)"></p>
+          <p [innerHTML]="parseBody(palette.colors[im].description)"></p>
+        </div>
+      </div>
+      <p>We can analyze the colors of the palette colorpicked from this image and draw conclusions on its palette composition.</p>
+    </section>
+    <hr class="hr">
+    <section>
+      <h1 class="title">Sorted</h1>
+      <p>Colors in makeup palettes can be organized based on three attributes. Colors are converted from RGB/hex format into HSL and sorted based on that property.</p>
+      <div class="columns">
+        <div class="column">
+          <div class="card-content">
+            <p class="subtitle is-4">Hue</p>
+            <div class="content">
+              <div class="palette">
+                <div *ngFor="let hex_code of sorted.hue" class='shade shade-col{{ palette.colors[im].columns }}' [style.background-color]="hex_code"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card-content">
+            <p class="subtitle is-4">Saturation</p>
+            <div class="content">
+              <div class="palette">
+                <div *ngFor="let hex_code of sorted.saturation" class='shade shade-col{{ palette.colors[im].columns }}' [style.background-color]="hex_code"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card-content">
+            <p class="subtitle is-4">Lightness</p>
+            <div class="content">
+              <div class="palette">
+                <div *ngFor="let hex_code of sorted.lightness" class='shade shade-col{{ palette.colors[im].columns }}' [style.background-color]="hex_code"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr">
+    <section>
+      <h1 class="title">Reduced</h1>
+      <div class="columns">
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="palette">
+                <div *ngFor="let hex_code of reduced" class='shade shade-col{{ palette.colors[im].columns }}' [style.background-color]="hex_code"></div>
+                <div *ngFor="let item of [].constructor(reduced_remainder_count)" class='shade shade-col{{ palette.colors[im].columns }}'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-two-thirds">
+          Threshold: {{ range_value }}
+          <div class="range">
+            <input class="range__input" step="0.1" min="1" max="20" [value]="range_value" type="range" #ref (change)="update_reduced(ref.value)" list="number">
+            <datalist class="range__list" id="number">
+              <option *ngFor="let item of [].constructor(20); index as i" class="range__opt">{{ i + 1 }}</option>
+            </datalist>
+          </div>
+          <p>Delta E is a metric for understanding how the human eye perceives color difference <a href="http://zschuessler.github.io/DeltaE/">(source)</a>. Two colors can be converted to the LAB format and then applied to Delta E algorithms to put a number to how similar or different they are. For these calculations, the CIEDE2000 Color-Difference Formula is utilized.</p>
+          <p>For the typical Delta E value range, a result <= 1 indicates the difference between two colors are not perceptible by human eyes. Delta E <= 2 indicates that difference is perceptible through close observation. Through my own testing, I find that Delta E <= 6 is more accurate when comparing makeup pigments.</p>
+          <p>Reductions are based on remove colors whose Delta Es with other colors are less than the provided threshold. You can adjust the slider above to reduce or increase the range for detecting colors that are perceptible through close observation.</p>
+          <p>Thanks goes to <a href="https://github.com/zschuessler">Zachary Schuessler</a> for implementing and documenting the DeltaE library.</p>
+        </div>
+      </div>
+    </section>
+  </div>
 </ng-template>

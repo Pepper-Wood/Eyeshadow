@@ -1,6 +1,39 @@
-<div *ngFor="let palette of palettes | keyvalue">
-    Key: <b>{{palette.key}}</b> and Value: <b>{{palette.value.company}}: {{palette.value.name}}</b>
-</div>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" [routerLink]="['/']" class="logo"><span id="logo"></span>eyeshadow</a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">Palettes</a>
+          <div class="navbar-dropdown">
+            <a *ngFor="let palette of palettes | keyvalue" class="navbar-item" routerLink="palette/{{ palette.key }}">
+              {{palette.value.company}}: {{palette.value.name}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
 
 <router-outlet></router-outlet>
-<p>Endo</p>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Eyeshadow</strong> by <a href="https://kathryndipippo.com">Kathryn DiPippo</a>. View source code on <a href="https://github.com/Pepper-Wood/Eyeshadow">GitHub</a>.
+    </p>
+    <p>
+      Icon made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>.
+    </p>
+  </div>
+</footer>

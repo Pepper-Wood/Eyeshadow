@@ -1,81 +1,79 @@
 {
-    "jeffree-star-orgy": {
-        "company": "Jeffree Star Cosmetics",
-        "name": "Orgy",
-        "colors": [
-            {
-                "image": "https://preview.redd.it/oi2ysnqn11h51.jpg?width=960&crop=smart&auto=webp&s=0c8506090fd5dfe0a357846da464c767b99d5668",
-                "columns": 6,
-                "hex_codes": [
-                    "#feece2",
-                    "#fdf2de",
-                    "#fee5d1",
-                    "#f8e1cf",
-                    "#fddcc9",
-                    "#f6d8cd",
-                    "#fee6c2",
-                    "#ffd9c4",
-                    "#ffccad",
-                    "#fdc9a4",
-                    "#eec5a3",
-                    "#ecb9a6",
-                    "#e8bb9e",
-                    "#e4a187",
-                    "#edac86",
-                    "#db9f85",
-                    "#d79477",
-                    "#d08c5d",
-                    "#c97d4c",
-                    "#c28f70",
-                    "#ca9a8e",
-                    "#b1633c",
-                    "#af583f",
-                    "#ad7d73",
-                    "#a65c43",
-                    "#aa7a63",
-                    "#985939",
-                    "#77402c",
-                    "#7a4b38",
-                    "#463130"
-                ]
-            }
-        ]
-    },
-    "abh-norvina-vol-1": {
-        "company": "Anastasia Beverly Hills",
-        "name": "Norvina Vol 1",
-        "colors": [
-            {
-                "image": "https://images.ulta.com/is/image/Ulta/2554348?op_sharpen=1&resMode=bilin&qlt=85&wid=800&hei=800&fmt=jpg",
-                "columns": 5,
-                "hex_codes": [
-                    "#eab0d6",
-                    "#a0379c",
-                    "#7b2154",
-                    "#b98867",
-                    "#f21559",
-                    "#cb3e8a",
-                    "#945b50",
-                    "#cb4570",
-                    "#582b70",
-                    "#6f3567",
-                    "#d9d8de",
-                    "#c8975f",
-                    "#8d3e42",
-                    "#933953",
-                    "#7f3333",
-                    "#e0aa46",
-                    "#43408d",
-                    "#ce0b2b",
-                    "#082980",
-                    "#1f1a1e",
-                    "#e47867",
-                    "#e74f38",
-                    "#be813e",
-                    "#f62e38",
-                    "#6b2a2e"
-                ]
-            }
-        ]
-    }
+  "abh-norvina-vol-1": {
+    "company": "Anastasia Beverly Hills",
+    "name": "Norvina Vol 1",
+    "description": "TBD",
+    "colors": [
+      {
+        "name": "Product Listing",
+        "image": "assets/images/abh/norvinavol1/productlisting.jpeg",
+        "description": "TBD",
+        "columns": 5,
+        "hex_codes": ["#eab0d6","#a0379c","#7b2154","#b98867","#f21559","#cb3e8a","#945b50","#cb4570","#582b70","#6f3567","#d9d8de","#c8975f","#8d3e42","#933953","#7f3333","#e0aa46","#43408d","#ce0b2b","#082980","#1f1a1e","#e47867","#e74f38","#be813e","#f62e38","#6b2a2e"]
+      }
+    ]
+  },
+  "jeffree-star-conspiracy": {
+    "company": "Jeffree Star Cosmetics",
+    "name": "Conspiracy",
+    "description": "TBD",
+    "colors": [
+      {
+        "name": "Launch Promo",
+        "image": "assets/images/jeffreestar/conspiracy/productlisting.jpg",
+        "description": "",
+        "columns": 6,
+        "hex_codes": ["#EBEBEB","#E7D3CC","#D1AC80","#C08A5E","#CEADA1","#66534F","#D4D295","#E392A5","#E3ED10","#E47FC5","#EE9647","#E23A51","#ABCCC5","#C3C4CA","#873254","#A19182","#577460","#323136"]
+      }
+    ]
+  },
+  "jeffree-star-cremated": {
+    "company": "Jeffree Star Cosmetics",
+    "name": "Cremated",
+    "description": "This makeup palette was released on May 22nd, 2020. According to the product listing decription, \"The Cremated Palette is what smokey eye dreams are made of! Includes 24 sickening shades from pure white diamond to the darkest black matte to create endless intense sultry or soft, gentle looks on any skin tone\".",
+    "colors": [
+      {
+        "name": "Launch Promo",
+        "image": "assets/images/jeffreestar/cremated/launch.jpeg",
+        "description": "Image featured is from the palette's initial inside reveal, found at https://twitter.com/JeffreeStar/status/1261784515288035328?s=20.",
+        "columns": 6,
+        "hex_codes": ["#211D23","#1C1C28","#4D464D","#413B3C","#59595B","#65656E","#564C40","#6C6C75","#4C4850","#8C7875","#5D5862","#796965","#987865","#A9A9A9","#7E7277","#ACA6A5","#A1938A","#B4B1B4","#BAAA9D","#D3CBB4","#D9BBA7","#DDD7CC","#E7E4E7","#DBD4D1"]
+      }
+    ]
+  },
+  "jeffree-star-orgy": {
+    "company": "Jeffree Star Cosmetics",
+    "name": "Orgy",
+    "description": "This makeup palette was released on August 21st, 2020. Described as Jeffree Star's \"biggest eyeshadow palette to date, a 30 pan ALL matte orgy of nudes\".",
+    "colors": [
+      {
+        "name": "Glamour Shot",
+        "image": "assets/images/jeffreestar/orgy/promo.jpeg",
+        "description": "Image featured is one of the photos used for the palette's initial promotion, found at https://twitter.com/JeffreeStar/status/1294405026605961217?s=20.",
+        "columns": 6,
+        "hex_codes": ["#F2DCCF","#EAD1BB","#DDAF95","#CBA18A","#C38E7C","#BA8D76","#F3CDAF","#EBB8A4","#E79D79","#D7926F","#AB7B5F","#99685A","#CC927A","#B87762","#C27A5D","#9B6353","#885544","#7D4F38","#9F6245","#97644F","#92665D","#724434","#68392F","#674843","#75493E","#78564A","#604035","#422723","#412C27","#241E20"]
+      },
+      {
+        "name": "YouTube Promo Still",
+        "image": "assets/images/jeffreestar/orgy/youtubepromostill.png",
+        "description": "Image featured is a screenshot from the palette's initial promotional YouTube video, found at https://www.youtube.com/watch?v=qDFjsMFojzs at timestamp 4:21.",
+        "columns": 6,
+        "hex_codes": ["#feece2","#fdf2de","#fee5d1","#f8e1cf","#fddcc9","#f6d8cd","#fee6c2","#ffd9c4","#ffccad","#fdc9a4","#eec5a3","#ecb9a6","#e8bb9e","#e4a187","#edac86","#db9f85","#d79477","#d08c5d","#c97d4c","#c28f70","#ca9a8e","#b1633c","#af583f","#ad7d73","#a65c43","#aa7a63","#985939","#77402c","#7a4b38","#463130"]
+      },
+      {
+        "name": "Lighter Skin Arm Swatches",
+        "image": "assets/images/jeffreestar/orgy/armswatches.png",
+        "description": "Image featured is a screenshot from the palette's initial promotional YouTube video, found at https://www.youtube.com/watch?v=qDFjsMFojzs at timestamp 5:01. The colors extracted from this image are specifically for the bottom arm of the person with the lighter skin tone.",
+        "columns": 15,
+        "hex_codes": ["#CF7C5D","#C67B61","#D1987A","#D6967E","#D8A580","#E6AB83","#ECB08F","#EDBCAA","#E8C5A9","#E0BFB4","#E9BBA6","#E1C0A9","#E3C3B1","#DEC6B7","#E2C5BC"]
+      },
+      {
+        "name": "Darker Skin Arm Swatches",
+        "image": "assets/images/jeffreestar/orgy/armswatches.png",
+        "description": "Image featured is a screenshot from the palette's initial promotional YouTube video, found at https://www.youtube.com/watch?v=qDFjsMFojzs at timestamp 5:01. The colors extracted from this image are specifically for the top arm of the person with the darker skin tone.",
+        "columns": 15,
+        "hex_codes": ["#D28866","#C77E64","#D19B7E","#D49A87","#D2A682","#E1AB89","#E6AC8F","#EBB8A2","#F2D0B2","#DBB6AE","#E8C0B4","#E8CCB5","#ECD2BE","#EAD8C4","#E9D0C0"]
+      }
+    ]
+  }
 }
