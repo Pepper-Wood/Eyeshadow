@@ -3,6 +3,18 @@
   color: #000 !important;
   font-size: 24px;
   padding: .5rem .75rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+#logo {
+  background: url('../assets/logo.png');
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-size: contain;
+  margin-right: 5px;
 }
 
 .navbar {

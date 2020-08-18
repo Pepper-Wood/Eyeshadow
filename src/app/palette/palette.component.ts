@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import palettes from '../../assets/palettes.json';
 import Color from 'color';
 import * as DeltaE from 'delta-e';
+import * as bulmaSlider from 'bulma-slider';
 
 @Component({
   selector: 'app-palette',
@@ -19,6 +20,7 @@ export class PaletteComponent implements OnInit {
   sorted: any;
   reduced: any;
   reduced_remainder_count: number;
+  range_value: number = 6;
 
   constructor(
     private route: ActivatedRoute,
@@ -35,10 +37,14 @@ export class PaletteComponent implements OnInit {
         let color_objects = this.convert_hex_codes_to_colors(this.palette.colors[this.im].hex_codes);
         this.sorted = this.get_sorted_hex_codes(color_objects);
 
-        this.reduced = this.get_reduced_palette(color_objects, 6);
+        this.reduced = this.get_reduced_palette(color_objects, this.range_value);
         this.reduced_remainder_count = this.palette.colors[this.im].hex_codes.length - this.reduced.length;
       }
     });
+  }
+
+  parseBody(body: string) {
+    return body.replace(/(http.*?\s)/, "<a target='_blank' href=\"$1\">$1</a>")
   }
 
   hue_compare(color_a, color_b) {
@@ -127,8 +133,9 @@ export class PaletteComponent implements OnInit {
   }
 
   update_reduced(range_value) {
+    this.range_value = range_value
     let color_objects = this.convert_hex_codes_to_colors(this.palette.colors[this.im].hex_codes);
-    this.reduced = this.get_reduced_palette(color_objects, range_value);
+    this.reduced = this.get_reduced_palette(color_objects, this.range_value);
     this.reduced_remainder_count = this.palette.colors[this.im].hex_codes.length - this.reduced.length;
   }
 

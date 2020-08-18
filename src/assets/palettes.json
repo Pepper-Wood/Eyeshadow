@@ -1,119 +1,51 @@
 {
-    "jeffree-star-orgy": {
-        "company": "Jeffree Star Cosmetics",
-        "name": "Orgy",
+  "jeffree-star-orgy": {
+    "company": "Jeffree Star Cosmetics",
+    "name": "Orgy",
+    "description": "This makeup palette was released on August 21st, 2020. Described as Jeffree Star's \"biggest eyeshadow palette to date, a 30 pan ALL matte orgy of nudes\".",
+    "colors": [
+      {
+        "name": "Glamour Shot",
+        "image": "assets/images/jeffreestar/orgy/promo.jpeg",
+        "description": "Image featured is one of the photos used for the palette's initial promotion, found at https://twitter.com/JeffreeStar/status/1294405026605961217?s=20.",
         "columns": 6,
-        "colors": [
-            {
-                "name": "Glamour Shot",
-                "image": "assets/images/jeffreestar/orgy/promo.jpeg",
-                "hex_codes": [
-                    "#F2DCCF",
-                    "#EAD1BB",
-                    "#DDAF95",
-                    "#CBA18A",
-                    "#C38E7C",
-                    "#BA8D76",
-                    "#F3CDAF",
-                    "#EBB8A4",
-                    "#E79D79",
-                    "#D7926F",
-                    "#AB7B5F",
-                    "#99685A",
-                    "#CC927A",
-                    "#B87762",
-                    "#C27A5D",
-                    "#9B6353",
-                    "#885544",
-                    "#7D4F38",
-                    "#9F6245",
-                    "#97644F",
-                    "#92665D",
-                    "#724434",
-                    "#68392F",
-                    "#674843",
-                    "#75493E",
-                    "#78564A",
-                    "#604035",
-                    "#422723",
-                    "#412C27",
-                    "#241E20"
-                ]
-            },
-            {
-                "name": "YouTube Promo Still",
-                "image": "assets/images/jeffreestar/orgy/youtubepromostill.jpg",
-                "hex_codes": [
-                    "#feece2",
-                    "#fdf2de",
-                    "#fee5d1",
-                    "#f8e1cf",
-                    "#fddcc9",
-                    "#f6d8cd",
-                    "#fee6c2",
-                    "#ffd9c4",
-                    "#ffccad",
-                    "#fdc9a4",
-                    "#eec5a3",
-                    "#ecb9a6",
-                    "#e8bb9e",
-                    "#e4a187",
-                    "#edac86",
-                    "#db9f85",
-                    "#d79477",
-                    "#d08c5d",
-                    "#c97d4c",
-                    "#c28f70",
-                    "#ca9a8e",
-                    "#b1633c",
-                    "#af583f",
-                    "#ad7d73",
-                    "#a65c43",
-                    "#aa7a63",
-                    "#985939",
-                    "#77402c",
-                    "#7a4b38",
-                    "#463130"
-                ]
-            }
-        ]
-    },
-    "abh-norvina-vol-1": {
-        "company": "Anastasia Beverly Hills",
-        "name": "Norvina Vol 1",
+        "hex_codes": ["#F2DCCF","#EAD1BB","#DDAF95","#CBA18A","#C38E7C","#BA8D76","#F3CDAF","#EBB8A4","#E79D79","#D7926F","#AB7B5F","#99685A","#CC927A","#B87762","#C27A5D","#9B6353","#885544","#7D4F38","#9F6245","#97644F","#92665D","#724434","#68392F","#674843","#75493E","#78564A","#604035","#422723","#412C27","#241E20"]
+      },
+      {
+        "name": "YouTube Promo Still",
+        "image": "assets/images/jeffreestar/orgy/youtubepromostill.png",
+        "description": "Image featured is a screenshot from the palette's initial promotional YouTube video, found at https://www.youtube.com/watch?v=qDFjsMFojzs at timestamp 4:21.",
+        "columns": 6,
+        "hex_codes": ["#feece2","#fdf2de","#fee5d1","#f8e1cf","#fddcc9","#f6d8cd","#fee6c2","#ffd9c4","#ffccad","#fdc9a4","#eec5a3","#ecb9a6","#e8bb9e","#e4a187","#edac86","#db9f85","#d79477","#d08c5d","#c97d4c","#c28f70","#ca9a8e","#b1633c","#af583f","#ad7d73","#a65c43","#aa7a63","#985939","#77402c","#7a4b38","#463130"]
+      },
+      {
+        "name": "Lighter Skin Arm Swatches",
+        "image": "assets/images/jeffreestar/orgy/armswatches.png",
+        "description": "Image featured is a screenshot from the palette's initial promotional YouTube video, found at https://www.youtube.com/watch?v=qDFjsMFojzs at timestamp 5:01. The colors extracted from this image are specifically for the bottom arm of the person with the lighter skin tone.",
+        "columns": 15,
+        "hex_codes": ["#CF7C5D","#C67B61","#D1987A","#D6967E","#D8A580","#E6AB83","#ECB08F","#EDBCAA","#E8C5A9","#E0BFB4","#E9BBA6","#E1C0A9","#E3C3B1","#DEC6B7","#E2C5BC"]
+      },
+      {
+        "name": "Darker Skin Arm Swatches",
+        "image": "assets/images/jeffreestar/orgy/armswatches.png",
+        "description": "Image featured is a screenshot from the palette's initial promotional YouTube video, found at https://www.youtube.com/watch?v=qDFjsMFojzs at timestamp 5:01. The colors extracted from this image are specifically for the top arm of the person with the darker skin tone.",
+        "columns": 15,
+        "hex_codes": ["#D28866","#C77E64","#D19B7E","#D49A87","#D2A682","#E1AB89","#E6AC8F","#EBB8A2","#F2D0B2","#DBB6AE","#E8C0B4","#E8CCB5","#ECD2BE","#EAD8C4","#E9D0C0"]
+      }
+    ]
+  },
+  "abh-norvina-vol-1": {
+    "company": "Anastasia Beverly Hills",
+    "name": "Norvina Vol 1",
+    "description": "TBD",
+    "colors": [
+      {
+        "name": "Product Listing",
+        "image": "assets/images/abh/norvinavol1/productlisting.jpeg",
+        "description": "TBD",
         "columns": 5,
-        "colors": [
-            {
-                "name": "Product Listing",
-                "image": "assets/images/abh/norvinavol1/productlisting.jpeg",
-                "hex_codes": [
-                    "#eab0d6",
-                    "#a0379c",
-                    "#7b2154",
-                    "#b98867",
-                    "#f21559",
-                    "#cb3e8a",
-                    "#945b50",
-                    "#cb4570",
-                    "#582b70",
-                    "#6f3567",
-                    "#d9d8de",
-                    "#c8975f",
-                    "#8d3e42",
-                    "#933953",
-                    "#7f3333",
-                    "#e0aa46",
-                    "#43408d",
-                    "#ce0b2b",
-                    "#082980",
-                    "#1f1a1e",
-                    "#e47867",
-                    "#e74f38",
-                    "#be813e",
-                    "#f62e38",
-                    "#6b2a2e"
-                ]
-            }
-        ]
-    }
+        "hex_codes": ["#eab0d6","#a0379c","#7b2154","#b98867","#f21559","#cb3e8a","#945b50","#cb4570","#582b70","#6f3567","#d9d8de","#c8975f","#8d3e42","#933953","#7f3333","#e0aa46","#43408d","#ce0b2b","#082980","#1f1a1e","#e47867","#e74f38","#be813e","#f62e38","#6b2a2e"]
+      }
+    ]
+  }
 }
